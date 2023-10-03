@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "885943210696",
+    "project_id": "eventzio",
+    "storage_bucket": "eventzio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885943210696:android:a5bad21c9d5f1fcf2f4bfd",
+        "android_client_info": {
+          "package_name": "com.dotcoder.ems"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJCDafcJ8xhWkLWCu0uojYD0-SzWJHENU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
