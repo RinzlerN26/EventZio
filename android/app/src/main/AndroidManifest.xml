@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dotcoder.ems">
    <application
-        android:label="ems"
+        android:label="EventZio"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
