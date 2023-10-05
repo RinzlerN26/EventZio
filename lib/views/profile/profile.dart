@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:ems/controller/data_controller.dart';
+import 'package:ems/views/onboarding_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -132,17 +133,24 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         onTap: () {
 
                         },
-                        child: Image(
+                        child:const Image(
                           image: AssetImage('assets/sms.png'),
                           width: 28,
                           height: 25,
                         ),
                       ),
-                      Image(
-                        image: AssetImage('assets/menu.png'),
+                      InkWell(
+                        onTap:(){
+                           FirebaseAuth.instance.signOut();
+                           Get.to(()=> OnBoardingScreen());
+                        } ,
+                       child:const Image(
+                        image: AssetImage('assets/logout.png'),
                         width: 23.33,
                         height: 19,
                       ),
+                      )
+                     
                     ],
                   ),
                 ),

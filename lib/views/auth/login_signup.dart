@@ -80,7 +80,7 @@ class _LoginViewState extends State<LoginView> {
                     ? Container(
                   child: myText(
                     text:
-                    'Welcome, Please Sign up to see events and classes from your friends.',
+                    'Welcome, Please Sign up.',
                     style: GoogleFonts.roboto(
                       letterSpacing: 0,
                       fontSize: 18,
@@ -92,7 +92,7 @@ class _LoginViewState extends State<LoginView> {
                     : Container(
                   child: myText(
                     text:
-                    'Welcome back, Please Sign in and continue your journey with us.',
+                    'Welcome, Please Sign in.',
                     style: GoogleFonts.roboto(
                       letterSpacing: 0,
                       fontSize: 18,

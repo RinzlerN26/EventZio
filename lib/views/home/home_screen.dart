@@ -33,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
                CustomAppBar(),
                 
                 Text(
-                  "What Going on today",
+                  "What's Going on today?",
                   style: GoogleFonts.raleway(
                       fontWeight: FontWeight.bold, fontSize: 20),
                 ),

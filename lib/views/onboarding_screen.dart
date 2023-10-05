@@ -21,7 +21,7 @@ class OnBoardingScreen extends StatelessWidget {
               height: 50,
             ),
 
-            Text("Welcome to EMS!",style: TextStyle(
+            Text("Welcome to EventZio!",style: TextStyle(
               color: Colors.black,
               fontSize: 27,
               fontWeight: FontWeight.w700,
@@ -31,7 +31,7 @@ class OnBoardingScreen extends StatelessWidget {
               height: 5,
             ),
 
-            Text("Event Management System",style: TextStyle(fontSize: 16),),
+            Text("Making NGO Events Glow",style: TextStyle(fontSize: 16),),
 
             SizedBox(
               height: 50,
@@ -70,7 +70,7 @@ class OnBoardingScreen extends StatelessWidget {
 
                     Padding(
                       padding: EdgeInsets.only(left: 15,right: 15),
-                      child: Text("The social media platform designed to get you offline",
+                      child: Text("The platform designed for hosting NGO Organized events",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             fontSize: 20,
@@ -82,7 +82,7 @@ class OnBoardingScreen extends StatelessWidget {
 
                     Padding(
                       padding: EdgeInsets.only(left: 15,right: 15),
-                      child: Text("EMS is an app where users can leverage their social network to create, discover, share, and monetize events or services.",
+                      child: Text("EventZio: An app for glorifying events organized by NGOs.",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             fontSize: 16,
