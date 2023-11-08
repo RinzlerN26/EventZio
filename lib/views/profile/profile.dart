@@ -127,18 +127,18 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       left: Get.width * 0.75, top: 20, right: 20),
                   alignment: Alignment.topRight,
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      InkWell(
-                        onTap: () {
+                      // InkWell(
+                      //   onTap: () {
 
-                        },
-                        child:const Image(
-                          image: AssetImage('assets/sms.png'),
-                          width: 28,
-                          height: 25,
-                        ),
-                      ),
+                      //   },
+                      //   child:const Image(
+                      //     image: AssetImage('assets/sms.png'),
+                      //     width: 28,
+                      //     height: 25,
+                      //   ),
+                      // ),
                       InkWell(
                         onTap:(){
                            FirebaseAuth.instance.signOut();
@@ -146,7 +146,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         } ,
                        child:const Image(
                         image: AssetImage('assets/logout.png'),
-                        width: 23.33,
+                        width: 29,
                         height: 19,
                       ),
                       )
@@ -322,54 +322,54 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
-                          Column(
-                            children: [
-                              Text(
-                                "${followers}",
-                                style: TextStyle(
-                                  fontSize: 16,
-                                  color: AppColors.black,
-                                  fontWeight: FontWeight.w600,
-                                  letterSpacing: -0.3,
-                                ),
-                              ),
-                              Text(
-                                "Followers",
-                                style: TextStyle(
-                                  fontSize: 13,
-                                  letterSpacing: -0.3,
-                                  fontWeight: FontWeight.w400,
-                                  color: AppColors.grey,
-                                ),
-                              ),
-                            ],
-                          ),
+                          // Column(
+                          //   children: [
+                          //     Text(
+                          //       "${followers}",
+                          //       style: TextStyle(
+                          //         fontSize: 16,
+                          //         color: AppColors.black,
+                          //         fontWeight: FontWeight.w600,
+                          //         letterSpacing: -0.3,
+                          //       ),
+                          //     ),
+                          //     Text(
+                          //       "Followers",
+                          //       style: TextStyle(
+                          //         fontSize: 13,
+                          //         letterSpacing: -0.3,
+                          //         fontWeight: FontWeight.w400,
+                          //         color: AppColors.grey,
+                          //       ),
+                          //     ),
+                          //   ],
+                          // ),
                           Container(
                             width: 1,
                             height: 35,
                             color: Color(0xff918F8F).withOpacity(0.5),
                           ),
-                          Column(
-                            children: [
-                              Text(
-                                "${following}",
-                                style: TextStyle(
-                                    fontSize: 16,
-                                    color: AppColors.black,
-                                    fontWeight: FontWeight.w600,
-                                    letterSpacing: -0.3),
-                              ),
-                              Text(
-                                "Following",
-                                style: TextStyle(
-                                  fontSize: 13,
-                                  letterSpacing: -0.3,
-                                  fontWeight: FontWeight.w400,
-                                  color: AppColors.grey,
-                                ),
-                              ),
-                            ],
-                          ),
+                          // Column(
+                          //   children: [
+                          //     Text(
+                          //       "${following}",
+                          //       style: TextStyle(
+                          //           fontSize: 16,
+                          //           color: AppColors.black,
+                          //           fontWeight: FontWeight.w600,
+                          //           letterSpacing: -0.3),
+                          //     ),
+                          //     Text(
+                          //       "Following",
+                          //       style: TextStyle(
+                          //         fontSize: 13,
+                          //         letterSpacing: -0.3,
+                          //         fontWeight: FontWeight.w400,
+                          //         color: AppColors.grey,
+                          //       ),
+                          //     ),
+                          //   ],
+                          // ),
                           // Container(
                           //   height: 40,
                           //   width: screenwidth * 0.25,

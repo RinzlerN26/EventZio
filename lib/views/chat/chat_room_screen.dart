@@ -100,14 +100,14 @@ class _ChatState extends State<Chat> {
                     color: AppColors.black,
                   ),
                 ),
-                myText(
-                  text: 'sara_smith',
-                  style: TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.w500,
-                    color: Color(0xff918F8F),
-                  ),
-                ),
+                // myText(
+                //   text: 'sara_smith',
+                //   style: TextStyle(
+                //     fontSize: 15,
+                //     fontWeight: FontWeight.w500,
+                //     color: Color(0xff918F8F),
+                //   ),
+                // ),
               ],
             ),
           ],
@@ -475,14 +475,14 @@ dataController!.createNotification(widget.uid!);
           children: [
             Padding(
               padding: const EdgeInsets.only(top: 5, right: 20),
-              child: Text(
-                "Yesterday",
-                style: TextStyle(
-                  color: AppColors.grey,
-                  fontWeight: FontWeight.w500,
-                  fontSize: 14,
-                ),
-              ),
+              // child: Text(
+              //   "Yesterday",
+              //   style: TextStyle(
+              //     color: AppColors.grey,
+              //     fontWeight: FontWeight.w500,
+              //     fontSize: 14,
+              //   ),
+              // ),
             )
           ],
         ),

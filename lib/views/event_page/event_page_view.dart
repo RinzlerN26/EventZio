@@ -115,7 +115,7 @@ int likes = 0;
                   Get.back();
                 },
                 child: Container(
-                  margin: EdgeInsets.only(top: 50, bottom: 20),
+                  margin: EdgeInsets.only(top: 70, bottom: 20),
                   width: 30,
                   height: 30,
                   child: Image.asset(
@@ -279,13 +279,13 @@ int likes = 0;
 
 
 
-                return Container(
-                  margin: EdgeInsets.only(left: 10),
-                  child: CircleAvatar(
-                minRadius: 13,
-                backgroundImage: NetworkImage(image),
-              ),
-                );
+              //   return Container(
+              //     margin: EdgeInsets.only(left: 10),
+              //     child: CircleAvatar(
+              //   minRadius: 13,
+              //   backgroundImage: NetworkImage(image),
+              // ),
+              //   );
               },itemCount: joinedUsers.length,scrollDirection: Axis.horizontal,),
                     ),
 
@@ -295,7 +295,7 @@ int likes = 0;
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         Text(
-                          "\$4${widget.eventData.get('price')}",
+                          "\$${widget.eventData.get('price')}",
                           style: TextStyle(
                             color: Colors.black,
                             fontWeight: FontWeight.w600,
@@ -334,69 +334,69 @@ int likes = 0;
               SizedBox(
                 height: 10,
               ),
-              Row(
-                children: [
-                  Expanded(
-                    child: InkWell(
-                      onTap: () {
-                        Get.to(() => Inviteguest());
-                      },
-                      child: Container(
-                        height: 50,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(13),
-                            color: Colors.blue.withOpacity(0.9)),
-                        child: Center(
-                          child: Text(
-                            "invite Friends",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w500,
-                              fontSize: 16,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Expanded(
-                    child: InkWell(
-                      onTap: () {
-                        Get.off(() => CheckOutView(widget.eventData));
-                      },
-                      child: Container(
-                        height: 50,
-                        decoration: BoxDecoration(
-                            color: Colors.white,
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.grey.withOpacity(0.4),
-                                spreadRadius: 0.1,
-                                blurRadius: 60,
-                                offset:
-                                    Offset(0, 1), // changes position of shadow
-                              ),
-                            ],
-                            borderRadius: BorderRadius.circular(13)),
-                        padding:
-                            EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-                        child: Center(
-                          child: Text(
-                            'Join',
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+              // Row(
+              //   children: [
+              //     Expanded(
+              //       child: InkWell(
+              //         onTap: () {
+              //           Get.to(() => Inviteguest());
+              //         },
+              //         child: Container(
+              //           height: 50,
+              //           decoration: BoxDecoration(
+              //               borderRadius: BorderRadius.circular(13),
+              //               color: Colors.blue.withOpacity(0.9)),
+              //           child: Center(
+              //             child: Text(
+              //               "invite Friends",
+              //               style: TextStyle(
+              //                 color: Colors.white,
+              //                 fontWeight: FontWeight.w500,
+              //                 fontSize: 16,
+              //               ),
+              //             ),
+              //           ),
+              //         ),
+              //       ),
+              //     ),
+              //     SizedBox(
+              //       width: 10,
+              //     ),
+              //     Expanded(
+              //       child: InkWell(
+              //         onTap: () {
+              //           Get.off(() => CheckOutView(widget.eventData));
+              //         },
+              //         child: Container(
+              //           height: 50,
+              //           decoration: BoxDecoration(
+              //               color: Colors.white,
+              //               boxShadow: [
+              //                 BoxShadow(
+              //                   color: Colors.grey.withOpacity(0.4),
+              //                   spreadRadius: 0.1,
+              //                   blurRadius: 60,
+              //                   offset:
+              //                       Offset(0, 1), // changes position of shadow
+              //                 ),
+              //               ],
+              //               borderRadius: BorderRadius.circular(13)),
+              //           padding:
+              //               EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+              //           child: Center(
+              //             child: Text(
+              //               'Join',
+              //               style: TextStyle(
+              //                 fontSize: 16,
+              //                 fontWeight: FontWeight.w600,
+              //               ),
+              //             ),
+              //           ),
+              //         ),
+              //       ),
+              //     ),
+              //   ],
+              // ),
               SizedBox(
                 height: 10,
               ),
@@ -425,7 +425,7 @@ int likes = 0;
                     child: Image.asset('assets/heart.png'),
                   ),
                   SizedBox(
-                    width: 10,
+                    width: 5,
                   ),
                   Text(
                     likes.toString(),
@@ -434,32 +434,32 @@ int likes = 0;
                       fontWeight: FontWeight.w500,
                     ),
                   ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Image.asset(
-                    'assets/message.png',
-                    width: 16,
-                    height: 16,
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Text(
-                    comments.toString(),
-                    style: TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Image.asset(
-                    'assets/send.png',
-                    height: 16,
-                    width: 16,
-                  ),
+                  // SizedBox(
+                  //   width: 10,
+                  // ),
+                  // Image.asset(
+                  //   'assets/message.png',
+                  //   width: 16,
+                  //   height: 16,
+                  // ),
+                  // SizedBox(
+                  //   width: 10,
+                  // ),
+                  // Text(
+                  //   comments.toString(),
+                  //   style: TextStyle(
+                  //     fontSize: 15,
+                  //     fontWeight: FontWeight.w500,
+                  //   ),
+                  // ),
+                  // SizedBox(
+                  //   width: 10,
+                  // ),
+                  // Image.asset(
+                  //   'assets/send.png',
+                  //   height: 16,
+                  //   width: 16,
+                  // ),
                   Spacer(),
                   InkWell(
                     onTap: (){

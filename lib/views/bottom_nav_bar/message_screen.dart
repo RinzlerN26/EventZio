@@ -200,11 +200,11 @@ class _MessageScreenState extends State<MessageScreen> {
                               SizedBox(
                                 width: screenwidth * 0.05,
                               ),
-                              Image(
-                                image: AssetImage('assets/img_8.png'),
-                                width: screenwidth * 0.1,
-                                height: screenheight * 0.1,
-                              ),
+                              // Image(
+                              //   image: AssetImage('assets/img_8.png'),
+                              //   width: screenwidth * 0.1,
+                              //   height: screenheight * 0.1,
+                              // ),
                             ],
                           ),
                         ),
