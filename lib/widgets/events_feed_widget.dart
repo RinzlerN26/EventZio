@@ -187,7 +187,7 @@ List eventSavedByUsers = [];
               Container(
                 
                 width: Get.width*0.6,
-                height: 50,
+                height: 20,
                 child: ListView.builder(itemBuilder: (ctx,index){
 
 
@@ -205,10 +205,10 @@ List eventSavedByUsers = [];
 
                 return Container(
                   margin: EdgeInsets.only(left: 10),
-                  child: CircleAvatar(
-                minRadius: 13,
-                backgroundImage: NetworkImage(image),
-              ),
+              //     child: CircleAvatar(
+              //   minRadius: 13,
+              //   backgroundImage: NetworkImage(image),
+              // ),
                 );
               },itemCount: joinedUsers.length,scrollDirection: Axis.horizontal,)
               ),
@@ -217,14 +217,14 @@ List eventSavedByUsers = [];
               
             ],
           ),
-          SizedBox(
-            height: Get.height * 0.03,
-          ),
+          // SizedBox(
+          //   height: Get.height * 0.03,
+          // ),
           Row(
             children: [
-              SizedBox(
-                width: 68,
-              ),
+              // SizedBox(
+              //   width: 68,
+              // ),
              InkWell(
                onTap: (){
                  if(userLikes.contains(FirebaseAuth.instance.currentUser!.uid)){
@@ -268,39 +268,39 @@ List eventSavedByUsers = [];
               SizedBox(
                 width: 20,
               ),
-              Container(
-                padding: EdgeInsets.all(0.5),
-                width: 17,
-                height: 17,
-                child: Image.asset(
-                  'assets/message.png',
-                  color: AppColors.black,
-                ),
-              ),
-              SizedBox(
-                width: 5,
-              ),
-              Text(
-                '$comments',
-                style: TextStyle(
-                  fontSize: 13,
-                  fontWeight: FontWeight.w500,
-                  color: AppColors.black,
-                ),
-              ),
-              SizedBox(
-                width: 15,
-              ),
-              Container(
-                padding: EdgeInsets.all(0.5),
-                width: 16,
-                height: 16,
-                child: Image.asset(
-                  'assets/send.png',
-                  fit: BoxFit.contain,
-                  color: AppColors.black,
-                ),
-              ),
+              // Container(
+              //   padding: EdgeInsets.all(0.5),
+              //   width: 17,
+              //   height: 17,
+              //   child: Image.asset(
+              //     'assets/message.png',
+              //     color: AppColors.black,
+              //   ),
+              // ),
+              // SizedBox(
+              //   width: 5,
+              // ),
+              // Text(
+              //   '$comments',
+              //   style: TextStyle(
+              //     fontSize: 13,
+              //     fontWeight: FontWeight.w500,
+              //     color: AppColors.black,
+              //   ),
+              // ),
+              // SizedBox(
+              //   width: 15,
+              // ),
+              // Container(
+              //   padding: EdgeInsets.all(0.5),
+              //   width: 16,
+              //   height: 16,
+              //   child: Image.asset(
+              //     'assets/send.png',
+              //     fit: BoxFit.contain,
+              //     color: AppColors.black,
+              //   ),
+              // ),
             ],
           ),
         ],
@@ -402,31 +402,31 @@ List eventSavedByUsers = [];
 
     return Column(
       children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              width: 50,
-              height: 50,
-              padding: EdgeInsets.all(10),
-              child: Image.asset(
-                'assets/doneCircle.png',
-                fit: BoxFit.cover,
-                color: AppColors.blue,
-              ),
-            ),
-            SizedBox(
-              width: 15,
-            ),
-            Text(
-              'You\'re all caught up!',
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.w700,
-              ),
-            ),
-          ],
-        ),
+        // Row(
+        //   mainAxisAlignment: MainAxisAlignment.center,
+        //   children: [
+        //     Container(
+        //       width: 50,
+        //       height: 50,
+        //       padding: EdgeInsets.all(10),
+        //       child: Image.asset(
+        //         'assets/doneCircle.png',
+        //         fit: BoxFit.cover,
+        //         color: AppColors.blue,
+        //       ),
+        //     ),
+        //     SizedBox(
+        //       width: 15,
+        //     ),
+        //     Text(
+        //       'You\'re all caught up!',
+        //       style: TextStyle(
+        //         fontSize: 18,
+        //         fontWeight: FontWeight.w700,
+        //       ),
+        //     ),
+        //   ],
+        // ),
         SizedBox(
           height: Get.height * 0.015,
         ),
