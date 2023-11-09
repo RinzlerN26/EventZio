@@ -188,6 +188,7 @@ class _ChatState extends State<Chat> {
                           .collection('chats')
                           .doc(widget.groupId)
                           .collection('chatroom')
+                          .orderBy('timeStamp', descending: false)
                           .snapshots(),
                     ))
                     
@@ -423,7 +424,7 @@ dataController!.createNotification(widget.uid!);
                 Padding(
                   padding: const EdgeInsets.only(left: 70, top: 5),
                   child: Text(
-                    "2 days ago",
+                    " ",
                     style: TextStyle(
                       color: AppColors.grey,
                       fontWeight: FontWeight.w500,
@@ -536,7 +537,7 @@ dataController!.createNotification(widget.uid!);
                   right: 0,
                 ),
                 child: Text(
-                  "06:25 PM",
+                  " ",
                   style: TextStyle(
                     color: AppColors.grey,
                     fontWeight: FontWeight.w500,
@@ -607,7 +608,7 @@ dataController!.createNotification(widget.uid!);
                   left: 60,
                 ),
                 child: Text(
-                  "06:25 PM",
+                  " ",
                   style: TextStyle(
                     color: AppColors.grey,
                     fontWeight: FontWeight.w500,
@@ -739,7 +740,7 @@ dataController!.createNotification(widget.uid!);
               Padding(
                 padding: const EdgeInsets.only(top: 2),
                 child: Text(
-                  "04:35 PM",
+                  " ",
                   style: TextStyle(
                     color: AppColors.grey,
                     fontWeight: FontWeight.w500,
@@ -876,7 +877,7 @@ dataController!.createNotification(widget.uid!);
               Padding(
                 padding: const EdgeInsets.only(left: 73, top: 2),
                 child: Text(
-                  "04:35 PM",
+                  " ",
                   style: TextStyle(
                     color: AppColors.grey,
                     fontWeight: FontWeight.w500,

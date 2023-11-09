@@ -89,7 +89,7 @@ class _CommunityScreenState extends State<CommunityScreen> {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    hintText: 'Austin,USA',
+                    hintText: 'Search by location',
                     hintStyle: TextStyle(
                       fontSize: 15,
                       fontWeight: FontWeight.w400,

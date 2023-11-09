@@ -344,11 +344,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           //     ),
                           //   ],
                           // ),
-                          Container(
-                            width: 1,
-                            height: 35,
-                            color: Color(0xff918F8F).withOpacity(0.5),
-                          ),
+                          // Container(
+                          //   width: 1,
+                          //   height: 35,
+                          //   color: Color(0xff918F8F).withOpacity(0.5),
+                          // ),
                           // Column(
                           //   children: [
                           //     Text(
@@ -359,15 +359,15 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           //           fontWeight: FontWeight.w600,
                           //           letterSpacing: -0.3),
                           //     ),
-                          //     Text(
-                          //       "Following",
-                          //       style: TextStyle(
-                          //         fontSize: 13,
-                          //         letterSpacing: -0.3,
-                          //         fontWeight: FontWeight.w400,
-                          //         color: AppColors.grey,
-                          //       ),
-                          //     ),
+                              Text(
+                                "User Profile Page",
+                                style: TextStyle(
+                                  fontSize: 23,
+                                  letterSpacing: -0.3,
+                                  fontWeight: FontWeight.w700,
+                                  color: AppColors.grey,
+                                ),
+                              ),
                           //   ],
                           // ),
                           // Container(
