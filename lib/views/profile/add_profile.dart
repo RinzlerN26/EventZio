@@ -234,56 +234,56 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         'assets/calender.png',
                         cacheHeight: 20,
                       ),
-                      hintText: 'Date Of Birth',
+                      hintText: 'Date Of Joining',
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                     ),
                   ),
                 ),
-                Row(
-                  children: [
-                    Expanded(
-                        child: Container(
-                          // alignment: Alignment.topLeft,
-                          // width: 150,
-                          child: RadioListTile(
-                            title: Text(
-                              'Male',
-                              style: TextStyle(
-                                fontSize: 19,
-                                fontWeight: FontWeight.w400,
-                                color: AppColors.genderTextColor,
-                              ),
-                            ),
-                            value: 0,
-                            groupValue: selectedRadio,
-                            onChanged: (int? val) {
-                              setSelectedRadio(val!);
-                            },
-                          ),
-                        )),
-                    Expanded(
-                      child: Container(
-                        child: RadioListTile(
-                          title: Text(
-                            'Female',
-                            style: TextStyle(
-                              fontSize: 19,
-                              fontWeight: FontWeight.w400,
-                              color: AppColors.genderTextColor,
-                            ),
-                          ),
-                          value: 1,
-                          groupValue: selectedRadio,
-                          onChanged: (int? val) {
-                            setSelectedRadio(val!);
-                          },
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+                // Row(
+                //   children: [
+                //     Expanded(
+                //         child: Container(
+                //           // alignment: Alignment.topLeft,
+                //           // width: 150,
+                //           child: RadioListTile(
+                //             title: Text(
+                //               'Male',
+                //               style: TextStyle(
+                //                 fontSize: 19,
+                //                 fontWeight: FontWeight.w400,
+                //                 color: AppColors.genderTextColor,
+                //               ),
+                //             ),
+                //             value: 0,
+                //             groupValue: selectedRadio,
+                //             onChanged: (int? val) {
+                //               setSelectedRadio(val!);
+                //             },
+                //           ),
+                //         )),
+                //     Expanded(
+                //       child: Container(
+                //         child: RadioListTile(
+                //           title: Text(
+                //             'Female',
+                //             style: TextStyle(
+                //               fontSize: 19,
+                //               fontWeight: FontWeight.w400,
+                //               color: AppColors.genderTextColor,
+                //             ),
+                //           ),
+                //           value: 1,
+                //           groupValue: selectedRadio,
+                //           onChanged: (int? val) {
+                //             setSelectedRadio(val!);
+                //           },
+                //         ),
+                //       ),
+                //     ),
+                //   ],
+                // ),
                 Obx(()=> authController!.isProfileInformationLoading.value? Center(child: CircularProgressIndicator(),) :Container(
                   height: 50,
                   margin: EdgeInsets.only(top: Get.height * 0.02),
@@ -324,23 +324,23 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 SizedBox(
                   height: Get.height * 0.03,
                 ),
-                Container(
-                    width: Get.width * 0.8,
-                    child: RichText(
-                      textAlign: TextAlign.center,
-                      text: TextSpan(children: [
-                        TextSpan(
-                            text: 'By signing up, you agree our ',
-                            style: TextStyle(
-                                color: Color(0xff262628), fontSize: 12)),
-                        TextSpan(
-                            text: 'terms, Data policy and cookies policy',
-                            style: TextStyle(
-                                color: Color(0xff262628),
-                                fontSize: 12,
-                                fontWeight: FontWeight.bold)),
-                      ]),
-                    )),
+                // Container(
+                //     width: Get.width * 0.8,
+                //     child: RichText(
+                //       textAlign: TextAlign.center,
+                //       text: TextSpan(children: [
+                //         TextSpan(
+                //             text: 'By signing up, you agree our ',
+                //             style: TextStyle(
+                //                 color: Color(0xff262628), fontSize: 12)),
+                //         TextSpan(
+                //             text: 'terms, Data policy and cookies policy',
+                //             style: TextStyle(
+                //                 color: Color(0xff262628),
+                //                 fontSize: 12,
+                //                 fontWeight: FontWeight.bold)),
+                //       ]),
+                //     )),
               ],
             ),
           ),

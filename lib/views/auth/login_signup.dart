@@ -390,54 +390,54 @@ class _LoginViewState extends State<LoginView> {
                },
              ),
            )),
-            myText(
-              text: 'Or Connect With',
-              style: TextStyle(
-                fontSize: Get.height * 0.025,
-              ),
-            ),
+            // myText(
+            //   text: 'Or Connect With',
+            //   style: TextStyle(
+            //     fontSize: Get.height * 0.025,
+            //   ),
+            // ),
             SizedBox(
               height: Get.height * 0.01,
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                socialAppsIcons(
-                    text: 'assets/fb.png',
-                    onPressed: (){
-                    }
-                ),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.center,
+            //   children: [
+            //     socialAppsIcons(
+            //         text: 'assets/fb.png',
+            //         onPressed: (){
+            //         }
+            //     ),
 
-                socialAppsIcons(
-                    text: 'assets/google.png',
-                    onPressed: (){
-                    }
-                ),
-              ],
-            ),
+            //     socialAppsIcons(
+            //         text: 'assets/google.png',
+            //         onPressed: (){
+            //         }
+            //     ),
+            //   ],
+            // ),
             SizedBox(
               height: Get.height * 0.02,
             ),
-            Container(
-                width: Get.width * 0.8,
-                child: RichText(
-                  textAlign: TextAlign.center,
-                  text: TextSpan(children: [
-                    TextSpan(
-                        text:
-                        'By signing up, you agree our ',
-                        style: TextStyle(
-                            color: Color(0xff262628),
-                            fontSize: 12)),
-                    TextSpan(
-                        text:
-                        'terms, Data policy and cookies policy',
-                        style: TextStyle(
-                            color: Color(0xff262628),
-                            fontSize: 12,
-                            fontWeight: FontWeight.bold)),
-                  ]),
-                )),
+            // Container(
+            //     width: Get.width * 0.8,
+            //     child: RichText(
+            //       textAlign: TextAlign.center,
+            //       text: TextSpan(children: [
+            //         TextSpan(
+            //             text:
+            //             'By signing up, you agree our ',
+            //             style: TextStyle(
+            //                 color: Color(0xff262628),
+            //                 fontSize: 12)),
+            //         TextSpan(
+            //             text:
+            //             'terms, Data policy and cookies policy',
+            //             style: TextStyle(
+            //                 color: Color(0xff262628),
+            //                 fontSize: 12,
+            //                 fontWeight: FontWeight.bold)),
+            //       ]),
+            //     )),
           ],
         )
 

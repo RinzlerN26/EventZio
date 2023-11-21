@@ -359,15 +359,15 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           //           fontWeight: FontWeight.w600,
                           //           letterSpacing: -0.3),
                           //     ),
-                              Text(
-                                "User Profile Page",
-                                style: TextStyle(
-                                  fontSize: 23,
-                                  letterSpacing: -0.3,
-                                  fontWeight: FontWeight.w700,
-                                  color: AppColors.grey,
-                                ),
-                              ),
+                              // Text(
+                              //   "User Profile Page",
+                              //   style: TextStyle(
+                              //     fontSize: 23,
+                              //     letterSpacing: -0.3,
+                              //     fontWeight: FontWeight.w700,
+                              //     color: AppColors.grey,
+                              //   ),
+                              // ),
                           //   ],
                           // ),
                           // Container(

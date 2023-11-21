@@ -294,16 +294,16 @@ int likes = 0;
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
+                        // Text(
+                        //   "\$${widget.eventData.get('price')}",
+                        //   style: TextStyle(
+                        //     color: const Color.fromARGB(255, 58, 49, 49),
+                        //     fontWeight: FontWeight.w600,
+                        //     fontSize: 18,
+                        //   ),
+                        // ),
                         Text(
-                          "\$${widget.eventData.get('price')}",
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.w600,
-                            fontSize: 18,
-                          ),
-                        ),
-                        Text(
-                          "${widget.eventData.get('max_entries')} spots left!",
+                          "${widget.eventData.get('max_entries')} spots",
                           style: TextStyle(
                             fontSize: 14,
                             color: Colors.black,

@@ -367,7 +367,7 @@ class _CreateEventViewState extends State<CreateEventView> {
 
                       if (input.length < 3) {
                         Get.snackbar(
-                            'Opps', "Event name is should be 3+ characters.",
+                            'Oops', "Event name is should be 3+ characters.",
                             colorText: Colors.white,
                             backgroundColor: Colors.blue);
                         return '';
@@ -385,14 +385,14 @@ class _CreateEventViewState extends State<CreateEventView> {
                     controller: locationController,
                     validator: (String input) {
                       if (input.isEmpty) {
-                        Get.snackbar('Opps', "Location is required.",
+                        Get.snackbar('Oops', "Location is required.",
                             colorText: Colors.white,
                             backgroundColor: Colors.blue);
                         return '';
                       }
 
                       if (input.length < 3) {
-                        Get.snackbar('Opps', "Location is Invalid.",
+                        Get.snackbar('Oops', "Location is Invalid.",
                             colorText: Colors.white,
                             backgroundColor: Colors.blue);
                         return '';
@@ -412,7 +412,7 @@ class _CreateEventViewState extends State<CreateEventView> {
                       controller: dateController,
                       validator: (input) {
                         if (date == null) {
-                          Get.snackbar('Opps', "Date is required.",
+                          Get.snackbar('Oops', "Date is required.",
                               colorText: Colors.white,
                               backgroundColor: Colors.blue);
                           return '';
@@ -431,7 +431,7 @@ class _CreateEventViewState extends State<CreateEventView> {
                         onPress: () {},
                         validator: (String input) {
                           if (input.isEmpty) {
-                            Get.snackbar('Opps', "Entries is required.",
+                            Get.snackbar('Oops', "Entries is required.",
                                 colorText: Colors.white,
                                 backgroundColor: Colors.blue);
                             return '';
@@ -446,14 +446,14 @@ class _CreateEventViewState extends State<CreateEventView> {
 
                 iconTitleContainer(
                     path: 'assets/#.png',
-                    text: 'Enter tags that will go with event.',
+                    text: 'Enter tags that will go with this event.',
                     width: double.infinity,
                     controller: tagsController,
                     type: TextInputType.text,
                     onPress: () {},
                     validator: (String input) {
                       if (input.isEmpty) {
-                        Get.snackbar('Opps', "Entries is required.",
+                        Get.snackbar('Oops', "Entries is required.",
                             colorText: Colors.white,
                             backgroundColor: Colors.blue);
                         return '';
@@ -704,7 +704,7 @@ class _CreateEventViewState extends State<CreateEventView> {
                     },
                     validator: (String? input) {
                       if (input!.isEmpty) {
-                        Get.snackbar('Opps', "Frequency is required.",
+                        Get.snackbar('Oops', "Frequency is required.",
                             colorText: Colors.white,
                             backgroundColor: Colors.blue);
                         return '';
@@ -887,21 +887,21 @@ class _CreateEventViewState extends State<CreateEventView> {
                         }).toList(),
                       ),
                     ),
-                    iconTitleContainer(
-                        path: 'assets/dollarLogo.png',
-                        text: 'price',
-                        type: TextInputType.number,
-                        height: 40,
-                        controller: priceController,
-                        onPress: () {},
-                        validator: (String input) {
-                          if (input.isEmpty) {
-                            Get.snackbar('Opps', "Price is required.",
-                                colorText: Colors.white,
-                                backgroundColor: Colors.blue);
-                            return '';
-                          }
-                        })
+                    // iconTitleContainer(
+                    //     path: 'assets/dollarLogo.png',
+                    //     text: 'price',
+                    //     type: TextInputType.number,
+                    //     height: 40,
+                    //     controller: priceController,
+                    //     onPress: () {},
+                    //     validator: (String input) {
+                    //       if (input.isEmpty) {
+                    //         Get.snackbar('Opps', "Price is required.",
+                    //             colorText: Colors.white,
+                    //             backgroundColor: Colors.blue);
+                    //         return '';
+                    //       }
+                    //     })
                   ],
                 ),
                 SizedBox(
@@ -923,7 +923,7 @@ class _CreateEventViewState extends State<CreateEventView> {
                         }
 
                         if (media.isEmpty) {
-                          Get.snackbar('Opps', "Media is required.",
+                          Get.snackbar('Oops', "Media is required.",
                               colorText: Colors.white,
                               backgroundColor: Colors.blue);
 
@@ -931,7 +931,7 @@ class _CreateEventViewState extends State<CreateEventView> {
                         }
 
                         if (tagsController.text.isEmpty) {
-                          Get.snackbar('Opps', "Tags is required.",
+                          Get.snackbar('Oops', "Tags is required.",
                               colorText: Colors.white,
                               backgroundColor: Colors.blue);
 
@@ -992,7 +992,6 @@ class _CreateEventViewState extends State<CreateEventView> {
                           'joined': [
                             FirebaseAuth.instance.currentUser!.uid
                           ],
-                          'price': priceController.text,
                           'media': mediaUrls,
                           'uid': FirebaseAuth.instance.currentUser!.uid,
                           'tags': tags,
