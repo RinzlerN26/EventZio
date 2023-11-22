@@ -358,12 +358,12 @@ class _LoginViewState extends State<LoginView> {
               height: Get.height * 0.02,
             ),
             myTextField(
-                bool: false,
+                bool: true,
                 icon: 'assets/lock.png',
                 text: 'Re-enter password',
                 validator: (input){
                   if(input != passwordController.text.trim()){
-                    Get.snackbar('Warning', 'Confirm Password is not same as password.',colorText: Colors.white,backgroundColor: Colors.blue);
+                    Get.snackbar('Warning', 'Confirm Password is not the same as password.',colorText: Colors.white,backgroundColor: Colors.blue);
                     return '';
                   }
                 },

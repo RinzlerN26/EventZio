@@ -277,7 +277,7 @@ Widget community1st({title, path, style}) {
     children: [
       path.toString().isEmpty?
       Container(
-        width: 24,
+        width: 25,
         height: 24,
         decoration:  BoxDecoration(
             shape: BoxShape.circle,
@@ -311,7 +311,7 @@ Widget userProfile({title, path, style}) {
     children: [
       path.toString().isEmpty?
       Container(
-        width: 24,
+        width: 26,
         height: 24,
         decoration:  BoxDecoration(
             shape: BoxShape.circle,
@@ -321,7 +321,7 @@ Widget userProfile({title, path, style}) {
 
       )
           :Container(
-        width: 24,
+        width: 23,
         height: 24,
         decoration:  BoxDecoration(
             shape: BoxShape.circle,
