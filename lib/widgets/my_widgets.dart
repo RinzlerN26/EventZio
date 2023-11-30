@@ -181,9 +181,9 @@ Widget iconWithTitle({text, Function? func,bool? isShow = true}) {
             decoration: BoxDecoration(
               // border: Border.all(width: 1),
               // borderRadius: BorderRadius.circular(50),
-              image: DecorationImage(
-                image: AssetImage('assets/Header.png'),
-              ),
+              // image: DecorationImage(
+              //   image: AssetImage('assets/Header.png'),
+              // ),
             ),
           ),
         ),
@@ -321,7 +321,7 @@ Widget userProfile({title, path, style}) {
 
       )
           :Container(
-        width: 23,
+        width: 12,
         height: 24,
         decoration:  BoxDecoration(
             shape: BoxShape.circle,

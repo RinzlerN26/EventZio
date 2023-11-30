@@ -194,7 +194,9 @@ class _CommunityScreenState extends State<CommunityScreen> {
                       onTap: (){
                         },
                       child: Container(
+                    
                         child: Column(
+                          
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             userProfile(
@@ -207,7 +209,7 @@ class _CommunityScreenState extends State<CommunityScreen> {
                               ),
                             ),
                             SizedBox(
-                              height: 5,
+                              height: 0,
                             ),
                             Row(
                               children: [
@@ -229,7 +231,7 @@ class _CommunityScreenState extends State<CommunityScreen> {
                               ],
                             ),
                             SizedBox(
-                              height: 10,
+                              height: 0,
                             ),
                             ClipRRect(
                               borderRadius: BorderRadius.circular(10),
